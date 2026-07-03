@@ -1,0 +1,19 @@
+{
+  "name": "qa-testing-app",
+  "version": "1.0.0",
+  "description": "Simple QA Testing App for Functional, Regression, and Performance testing",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest",
+    "test:functional": "jest --runInBand tests/functional",
+    "test:regression": "jest --runInBand tests/regression"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
